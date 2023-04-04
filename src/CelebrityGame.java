@@ -7,22 +7,22 @@ import java.util.ArrayList;
  * @version 2.3 25/09/2018 refactored the prepareGame and play methods
  */
 public class CelebrityGame {
-	/**
-	 * A reference to a Celebrity or subclass instance.
-	 */
+
+	private Celebrity gameCelebrity;
 
 	/**
 	 * The GUI frame for the Celebrity game.
 	 */
 
-	/**
-	 * The ArrayList of Celebrity values that make up the game
-	 */
+	private ArrayList<Celebrity> celebGameList;
 
-	/**
-	 * Builds the game and starts the GUI
-	 */
-	public CelebrityGame() {
+	private CelebrityFrame gameWindow;
+
+	public CelebrityGame()
+	{
+		celebGameList = new ArrayList<Celebrity>();
+		gameCelebrity = null;
+		gameWindow = new CelebrityFrame(this);
 
 	}
 
